@@ -27,6 +27,7 @@ THEN the saved events persist
 The following animation demonstrates the application functionality:
 
 New screenshot of the working Demo:
+![Image of Workday Planner working and showing current time and color](/Assets/images/Workday-planner-scheduler-refactor.png)
 
 Working Demo:
 ![A user clicks on slots on the color-coded calendar and edits the events.](./Assets/images/05-third-party-apis-homework-demo.gif)
