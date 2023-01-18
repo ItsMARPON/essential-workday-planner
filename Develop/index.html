@@ -43,10 +43,11 @@
     </header>
     <div class="container-fluid px-5">
       <!-- Adding hourly time blocks for planner to-do list -->
+      <!-- Most employers establish a 8 hour worki day, however it can be longer, planner accounts for 10 working hours -->
       <div id="hour-7" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">7 AM</div>
         <textarea
-          name="plannerItem1"
+          id="plannerItem1"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -62,7 +63,7 @@
       <div id="hour-8" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">8 AM</div>
         <textarea
-          name="plannerItem2"
+          id="plannerItem2"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -78,7 +79,7 @@
       <div id="hour-9" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">9 AM</div>
         <textarea
-          name="plannerItem3"
+          id="plannerItem3"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -94,7 +95,7 @@
       <div id="hour-10" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">10 AM</div>
         <textarea
-          name="plannerItem4"
+          id="plannerItem4"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -110,7 +111,7 @@
       <div id="hour-11" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">11 AM</div>
         <textarea
-          name="plannerItem5"
+          id="plannerItem5"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -126,7 +127,7 @@
       <div id="hour-12" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">12 PM</div>
         <textarea
-          name="plannerItem6"
+          id="plannerItem6"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -142,7 +143,7 @@
       <div id="hour-1" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">1 PM</div>
         <textarea
-          name="plannerItem7"
+          id="plannerItem7"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -158,7 +159,7 @@
       <div id="hour-2" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">2 PM</div>
         <textarea
-          name="plannerItem8"
+          id="plannerItem8"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -174,7 +175,7 @@
       <div id="hour-3" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">3 PM</div>
         <textarea
-          name="plannerItem9"
+          id="plannerItem9"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -190,7 +191,7 @@
       <div id="hour-4" class="row time-block present">
         <div class="col-2 col-md-1 hour text-center py-3">4 PM</div>
         <textarea
-          name="plannerItem10"
+          id="plannerItem10"
           class="col-8 col-md-10 description"
           rows="3"
         >
@@ -203,43 +204,6 @@
           <i class="fas fa-save" aria-hidden="true"></i>
         </button>
       </div>
-
-      <!-- Use class for "past", "present", and "future" to apply styles to the
-        time-block divs accordingly. The javascript will need to do this by
-        adding/removing these classes on each div by comparing the hour in the
-        id to the current hour. The html provided below is meant to be an example
-        demonstrating how the css provided can be leveraged to create the
-        desired layout and colors. The html below should be removed or updated
-        in the finished product. Remember to delete this comment once the
-        code is implemented.
-        -->
-
-      <!-- Example of a past time block. The "past" class adds a gray background color. -->
-      <!-- <div id="hour-9" class="row time-block past">
-        <div class="col-2 col-md-1 hour text-center py-3">9AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-          <i class="fas fa-save" aria-hidden="true"></i>
-        </button>
-      </div> -->
-
-      <!-- Example of a present time block. The "present" class adds a red background color. -->
-      <!-- <div id="hour-10" class="row time-block present">
-        <div class="col-2 col-md-1 hour text-center py-3">10AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-          <i class="fas fa-save" aria-hidden="true"></i>
-        </button>
-      </div> -->
-
-      <!-- Example of a future time block. The "future" class adds a green background color. -->
-      <!-- <div id="hour-11" class="row time-block future">
-        <div class="col-2 col-md-1 hour text-center py-3">11AM</div>
-        <textarea class="col-8 col-md-10 description" rows="3"> </textarea>
-        <button class="btn saveBtn col-2 col-md-1" aria-label="save">
-          <i class="fas fa-save" aria-hidden="true"></i>
-        </button>
-      </div> -->
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
